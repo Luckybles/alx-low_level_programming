@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /* main - accept a input n  to check whether is positive negative zero */
 
-/* return: positve zero negative*/
+/* return: 0 */
 int main(void)
 {
 	int n;
@@ -11,14 +12,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("is positive\n");
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else 
 	{
-		printf("is negative\n");
+		printf("%d is negative\n", n);
 	}
 	return (0);
+}
