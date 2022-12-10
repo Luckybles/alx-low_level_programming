@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* main - accept a input n  to check whether is positive negative zero */
-
-/* return: 0 */
+/* main - print if the n is positive,negativer or 0
+ *
+ * return: 0
+ */
 int main(void)
 {
 	int n;
