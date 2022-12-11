@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-	int digit = 0;
-	char digit = 'a';
+	char digit = 0;
 
 	while (digit <= 9 && digit <= 'f')
 	{
