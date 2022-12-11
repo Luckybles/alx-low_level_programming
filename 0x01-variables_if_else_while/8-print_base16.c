@@ -10,7 +10,7 @@ int main(void)
 
 	while (digit <= 9)
 	{
-		for (digit = 'a'; digit <= 'f', digit++)
+		for (digit = 'a'; digit <= 'f'; digit++)
 			putchar(digit);
 		digit++;
 	}
