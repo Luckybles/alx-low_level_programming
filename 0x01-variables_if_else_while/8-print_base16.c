@@ -8,9 +8,8 @@ int main(void)
 {
 	char digit = 0;
 
-	while (digit <= 9)
+	while (digit <= 9 && digit <= 'f')
 	{
-		for (digit = 'a'; digit <= 'f'; digit++)
 			putchar(digit);
 		digit++;
 	}
