@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(number + '0');
 
-		if (number = 0 || number < 10)
+		if (number == 0 && number == 9)
 		{
 				putchar(',');
 				putchar(' ');
