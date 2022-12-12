@@ -10,10 +10,11 @@ int main(void)
 
 	for (number = 0; number < 10; number++)
 	{
-		if (number != 0)
+		if (number != -1)
 		{
 			putchar(number + '0');
 				putchar(',');
+				putchar(' ');
 		}
 	}
 		putchar('\n');
