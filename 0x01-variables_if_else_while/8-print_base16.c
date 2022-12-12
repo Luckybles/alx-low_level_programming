@@ -6,12 +6,16 @@
  */
 int main(void)
 {
-	char digit = 0;
+	char digit;
+	int number;
 
-	while (digit <= 9 && digit <= 'f')
+	for (number = 0; number < 10; number++)
+	{
+		putchar(number + '0');
+	}
+	for (digit = 'a'; digit <= 'f'; digit++)
 	{
 		putchar(digit);
-		digit++;
 	}
 	putchar('\n');
 	return (0);
