@@ -8,7 +8,7 @@
 void print_alphabet_x10(void)
 {
 	char alphabet = 'a';
-	int num;
+	int num = 1;
 
 	while (alphabet <= 'z')
 	{
