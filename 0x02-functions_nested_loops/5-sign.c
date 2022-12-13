@@ -1,8 +1,10 @@
 #include "main.h"
 /**
  * print_sign - prints the sign of a number
- *
- * Return: 1 ,print  '+' if n > 0, prints 0 if n == 0, -1 if n < 0
+ * @n: the number of tthe sign to be printed
+ * Return: 1 if number is greater than zero
+ * 0 if number is zero
+ * -1 if number is less than zero
  */
 int print_sign(int n)
 {
