@@ -4,19 +4,19 @@
  * @n: the number to show the last digit
  * Return: the value of the last digit
  */
-int print_last_digit(int t)
+int print_last_digit(int n)
 {
-	int n;
+	int t;
 
-	n = n % 10;
+	t = n % 10;
 
-	if (n < 0)
+	if (t < 0)
 	{
-		n *= -1;
+		t *= -1;
 	}
 	else
 	{
-		_putchar(n +'0');
+		_putchar(t +'0');
 	}
 	return (0);
 }
