@@ -9,7 +9,7 @@ void times_table(void)
 	int multiply;
 	int product;
 
-	for (numb = 0; number <= 9; numb++)
+	for (numb = 0; numb <= 9; numb++)
 	{
 		_putchar('0');
 		for (multiply = 1; multiply <= 9; multiply++)
