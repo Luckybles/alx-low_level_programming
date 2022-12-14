@@ -14,7 +14,7 @@ void times_table(void)
 		_putchar('0');
 		for (multiply = 1; multiply <= 9; multiply++)
 		{
-			product = number * multiply;
+			product = numb * multiply;
 			_putchar(',');
 			_putchar(' ');
 
