@@ -6,11 +6,11 @@
  */
 int _isupper(int c)
 {
-	char c;
+	char uppercase;
 
-	for (c = 'A'; c <= 'Z'; c++)
+	for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 	{
-		if (c == 'C')
+		if (c == uppercase)
 		{
 			return (1);
 		}
