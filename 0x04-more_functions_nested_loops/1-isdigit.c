@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - checks for a digit 
+ * _isdigit - checks for a digit
  * @c: integer from 0 through 9
  * Return: 1 if c is a figit, 0 otherwise
  */
