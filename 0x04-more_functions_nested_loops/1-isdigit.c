@@ -6,16 +6,12 @@
  */
 int _isdigit(int c)
 {
-	int digit;
-	for (digit = 0; digit <= 9; digit++)
+	if (c >= 0 && c <= 9)
 	{
-		if (c == digit)
-		{
-			return (1);
-		}
-		else
-		{
-			return(0);
-		}
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
