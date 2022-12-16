@@ -23,10 +23,16 @@ int main(void)
 		{
 			printf("Fizz");
 		}
-		else
+		else if (numb % 5 == 0)
 		{
 			printf("Buzz");
 		}
+		else
+		{
+			printf("%i", numb);
+		}
+		if (numb < 100)
+			printf(" ");
 	}
 	printf("\n");
 
