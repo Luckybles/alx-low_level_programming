@@ -9,7 +9,7 @@ void print_square(int size)
 	int firstloop;
 	int secondloop;
 
-	if (size < = 0)
+	if (size <= 0)
 		_putchar('\n');
 
 	for (firstloop = 0; firstloop < size; firstloop++)
