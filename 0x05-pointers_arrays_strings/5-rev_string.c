@@ -12,9 +12,8 @@ void rev_string(char *s)
 
 	while( *s != '\0')
 		collect++;
-	for (i = 0; i< collect; i++)
-	{
-		collect--;
+	for (i = 0; i< collect / 2; i++)
+
 		reverse = s[i];
 		s[i] = s[collect];
 		s[collect] = reverse;
