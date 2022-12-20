@@ -13,7 +13,7 @@ void puts_half(char *str)
 	{
 		if (( count - 1) / 2)
 		{
-			_puctchar(str[i]);
+			_putchar(str[i]);
 		}
 		else
 		{
