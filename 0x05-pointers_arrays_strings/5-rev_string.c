@@ -13,6 +13,7 @@ void rev_string(char *s)
 	while( s[collect] != '\0')
 		collect++;
 	for (i = 0; i< collect / 2; i++)
+	{
 
 		reverse = s[i];
 		s[i] = s[collect -1 -i];
