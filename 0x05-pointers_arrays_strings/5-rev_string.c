@@ -15,7 +15,7 @@ void rev_string(char *s)
 	for (i = 0; i< collect / 2; i++)
 
 		reverse = s[i];
-		s[i] = s[collect];
-		s[collect] = reverse;
+		s[i] = s[collect -1 -i];
+		s[collect -1 -i] = reverse;
 	}
 }
