@@ -11,6 +11,7 @@ void puts2(char *str)
 
 	while (*str != '\0')
 		collect++;
+		str++;
 	for (i = 0; i < collect - 1; i++)
 	{
 		if (i % 2 == 0)
