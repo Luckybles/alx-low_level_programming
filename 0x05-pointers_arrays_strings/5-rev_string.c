@@ -10,13 +10,13 @@ void rev_string(char *s)
 	int i;
 	char reverse = s[0];
 
-	while( s[collect] != '\0')
+	while (s[collect] != '\0')
 		collect++;
-	for (i = 0; i< collect / 2; i++)
+	for (i = 0; i < collect / 2; i++)
 	{
 
 		reverse = s[i];
-		s[i] = s[collect -1 -i];
-		s[collect -1 -i] = reverse;
+		s[i] = s[collect - 1 - i];
+		s[collect - 1 - i] = reverse;
 	}
 }
