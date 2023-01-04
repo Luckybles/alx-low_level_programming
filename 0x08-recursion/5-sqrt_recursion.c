@@ -4,15 +4,15 @@
  * @n : the integer to find its square root
  * Return: square root of a number.
  */
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
 {
-	int suare = i * i;
+	int i = j * j;
 
-	if (suare > n)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	if (suare == n)
+	if (i == n)
 	{
 		return (i);
 	}
