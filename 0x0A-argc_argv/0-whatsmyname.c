@@ -7,9 +7,9 @@
  * @argv: arry that contain the program line to be counted
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc _attribute_((unused)), char *argv[])
 {
-	printf("%s", argv[0]);
+	printf("%s", *argv);
 	printf("\n");
 	return (0);
 }
