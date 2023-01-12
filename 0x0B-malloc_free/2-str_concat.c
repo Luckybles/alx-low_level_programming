@@ -17,14 +17,14 @@ char *str_concat(char *s1, char *s2)
 		while (*ptr++)
 			size1++;
 	else
-		s1 = " ";
+		s1 = "";
 
 	ptr = s2;
 	if (s2)
 		while (*ptr++)
 			size2++;
 	else
-		s2 = " ";
+		s2 = "";
 
 	ret = malloc(size1 + size2 + 1);
 	if (!ret)
@@ -39,5 +39,3 @@ char *str_concat(char *s1, char *s2)
 
 	return (ret);
 }
-Footer
-© 2023 GitHub, Inc.
