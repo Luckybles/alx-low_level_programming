@@ -36,7 +36,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (j == n - 1)
 				printf("%d\n", numb);
 			else
-				printf("%d%s" numb, saperator);
+				printf("%d%s", numb, saperator);
 		}
 	}
 	va_end(args);
