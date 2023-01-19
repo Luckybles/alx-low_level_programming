@@ -29,7 +29,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (j == n - 1)
 				printf("%d\n", numb);
 			else
-				printf("%d\n", numb);
+				printf("%d", numb);
 		}
 		else
 		{
