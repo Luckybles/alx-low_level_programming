@@ -12,31 +12,32 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
-	unsigned int j;
-	int numb;
+	unsigned int i;
+	int num;
 
 	if (n == 0)
 	{
 		printf("\n");
 		return;
 	}
+
 	va_start(args, n);
-	for (j = 0; j < n; j++)
+	for (i = 0; i < n; i++)
 	{
-		numb = var_arg(args, int);
+		num = va_arg(args, int);
 		if (separator == NULL)
 		{
-			if (j == n - 1)
-				printf("%d\n", numb);
+			if (i == n - 1)
+				printf("%d\n", num);
 			else
-				printf("%d", numb);
+				printf("%d", num);
 		}
 		else
 		{
-			if (j == n - 1)
-				printf("%d\n", numb);
+			if (i == n - 1)
+				printf("%d\n", num);
 			else
-				printf("%d%s", numb, separator);
+				printf("%d%s", num, separator);
 		}
 	}
 	va_end(args);
