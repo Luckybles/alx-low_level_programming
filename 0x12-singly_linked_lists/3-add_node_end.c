@@ -11,52 +11,31 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_list, *temp;
+	list_t *new;
+ 	list_t *temp = *head;
+ 	unsigned int len = 0;
 
-	if (str != NULL)
-	{
-		new_list = malloc(sizeof(list_t));
-		if (new_list == NULL)
-			return (NULL);
+ 	while (str[len])
+ 		len++;
 
-		new_list->str = strdup(str);
-		new_list->len = _strlen(str);
-		new_list->next = NULL;
+ 	new = malloc(sizeof(list_t));
+ 	if (!new)
+ 		return (NULL);
 
-		if (*head == NULL)
-		{
-			*head  = new_list;
-			return (*head);
-		}
-		else
-		{
-			temp = *head;
-			while (temp->next)
-				temp = temp->next;
+ 	new->str = strdup(str);
+ 	new->len = len;
+ 	new->next = NULL;
 
-			temp->next = new_list;
-			return (temp);
-		}
-	}
+ 	if (*head == NULL)
+ 	{
+ 		*head = new;
+ 		return (new);
+ 	}
 
-	return (NULL);
-}
+ 	while (temp->next)
+ 		temp = temp->next;
 
-/**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(const char *s)
-{
-	int c = 0;
+ 		temp->next = new;
 
-	while (*s)
-	{
-		s++;
-		c++;
-	}
-
-	return (c);
+ 		return (new);
 }
