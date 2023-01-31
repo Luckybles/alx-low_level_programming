@@ -4,7 +4,7 @@
  * @n: integer number
  * Return: natural numbers
  */
-void print_to_98(int n)
+void print_to_98(int b)
 {
 	if (b < 98)
 	{
