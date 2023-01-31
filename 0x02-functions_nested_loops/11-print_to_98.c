@@ -6,14 +6,21 @@
  */
 void print_to_98(int n)
 {
-	if (n >= 0)
+	if (b < 98)
 	{
-		for (n = 0; n <= 98; n++)
+		while (b < 98)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar('\n');
+			printf("%d, ", b);
+			b++;
 		}
 	}
-}
-			
+	else if (b > 98)
+	{
+		while (b > 98)
+		{
+			printf("%d, ", b);
+			b--;
+		}
+	}
+	printf("98\n");
+}			
