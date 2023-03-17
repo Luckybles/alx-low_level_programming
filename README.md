@@ -1,1 +1,1 @@
- still on singly linked list functions
+this is a link list
